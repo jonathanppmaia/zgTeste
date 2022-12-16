@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FormData & Fetch API</title>
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="header">
+			<h2>Cadastra-se no Programa</h2>
+		</div>
+		<form class="form" id="form" onsubmit="newUser()">
+
+			<div class="form-control">
+				<label for="username">Nome</label>
+				<input type="text" id="name" class="requerid" oninput="nameValidate()">
+				<span class="span-required">Digite seu nome corretamente</span>
+			</div>
+
+			<div class="form-control">
+				<label>Email</label>
+				<input type="email" id="email" class="requerid" oninput="emailValidate()">
+				<span class="span-required">Digite seu e-mail corretamente</span>
+			</div>
+
+			<div class="form-control ">
+				<label>CPF</label>
+				<input type="text" class="requerid" id="cpf" onkeypress="formatedCpf()" maxlength="14" oninput="validarCpf()">
+
+
+				<span class="span-required">Digite seu cpf corretamente</span>
+			</div>
+
+			<button type="submit" id="button">ENVIAR</button>
+		</form>
+	</div>
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
