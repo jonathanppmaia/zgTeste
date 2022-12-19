@@ -4,7 +4,7 @@
 
 ## Projeto
 
-Projeto para cadastro de novos usuários para sistema.
+Projeto para cadastro de novos usuários para sistema. Desenvolvido para seleção do programa ZG acelera (12/2022)
 
 ## Tecnologias
 
